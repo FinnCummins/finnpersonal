@@ -2,3 +2,12 @@ body {
     text-align: center;
     margin:auto;
 }
+
+p {
+    text-align:center;
+    margin:auto;
+}
+
+navbar {
+    display:inline;
+}
