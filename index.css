@@ -6,8 +6,15 @@ body {
 p {
     text-align:center;
     margin:auto;
+    display:inline-block;
 }
 
 navbar {
     display:inline;
+}
+
+#about {
+    width:50%;
+    text-align:center;
+    margin:auto;
 }
