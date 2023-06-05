@@ -18,3 +18,11 @@ navbar {
     text-align:center;
     margin:auto;
 }
+
+#finn-in-verona {
+    height:300px;
+    width:450px;
+    display: block;
+    margin:auto;
+    padding-top:20px;
+}
