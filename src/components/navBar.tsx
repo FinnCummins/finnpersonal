@@ -6,7 +6,7 @@ import { faHome, faUser, faEnvelope, faCode} from '@fortawesome/free-solid-svg-i
 export const NavBar = () => {
     return (
         <div className="navbar">
-            <div id="nav">
+            <div id="nav2">
                 <p><a href="/"><FontAwesomeIcon icon={faHome} color="#4d4d4e"/></a></p>
                 <p><a href="/about"><FontAwesomeIcon icon={faUser} color="#4d4d4e"/></a></p>
                 <p><a href="/projects"><FontAwesomeIcon icon={faEnvelope} color="#4d4d4e"/></a></p>
