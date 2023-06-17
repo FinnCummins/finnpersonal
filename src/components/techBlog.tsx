@@ -7,7 +7,7 @@ export const TechBlog = () => {
             <NavBar />
             <h2>Tech Blog</h2>
             <p>Here I will write about the technical decisions/challenges/features I have encountered
-                while building my <a href="projects.html">projects</a>.
+                while building my <a href="/projects">projects</a>.
             </p>
         </>
     )
