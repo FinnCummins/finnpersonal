@@ -22,4 +22,4 @@ jobs:
 
     - name: Deploy to S3
       run: |
-        aws s3 sync . s3://www.finncummins.com
+        aws s3 sync . s3://www.finncummins.com  # Replace with your bucket name
