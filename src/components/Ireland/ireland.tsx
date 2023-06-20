@@ -16,7 +16,6 @@ const Logo = () => {
                 className="solid-logo" 
                 src={"3dIrelandOutline.jpg"}
                 ref={solidLogoRef}
-                alt="JavaScript,  Developer"
             />
             <svg 
                 width="559pt"
