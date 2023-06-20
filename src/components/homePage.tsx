@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from "react";
 import { NavBar } from "./navBar";
-import Logo from "../Ireland/ireland"
+import Logo from "./Ireland/ireland"
 
 export const Home = () => {
     const [finnsAge, setFinnsAge] = useState((Date.now()-Date.parse("2002-09-02"))/1000/60/60/24/365.25);

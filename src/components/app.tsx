@@ -8,7 +8,7 @@ import { TechBlog } from "./techBlog";
 export const App = () => {
     return (
         <Routes>
-            <Route path="/" element={<Home />} />
+            <Route index path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/techblog" element={<TechBlog />} />

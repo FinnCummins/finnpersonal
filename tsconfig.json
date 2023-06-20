@@ -13,5 +13,5 @@
     "preserveSymlinks": true,
     "resolveJsonModule": true
   },
-  "include": ["src", "server.tsx"]
+  "include": ["src"]
 }
