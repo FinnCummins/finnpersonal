@@ -46,11 +46,10 @@ export const Home = () => {
             
             <div id="homePage-intro">
                 <h1>
-                    <AnimatedLetters letterClass={letterClass} strArray={lineOne} idx={1} /> <AnimatedLetters letterClass={letterClass} strArray={firstName} idx={11} /> <AnimatedLetters letterClass={letterClass} strArray={surname} idx={15} /> <AnimatedLetters letterClass={letterClass} strArray={lineTwo} idx={22} /> <AnimatedLetters letterClass={letterClass} strArray={finnsAge.slice(0,7)} idx={28} /><span id="age">{finnsAge.slice(7, 12)}</span><br /> <AnimatedLetters letterClass={letterClass} strArray={lineThree} idx={40} /> 
+                    <AnimatedLetters letterClass={letterClass} strArray={lineOne} idx={1} /> <AnimatedLetters letterClass={letterClass} strArray={firstName} idx={11} /> <AnimatedLetters letterClass={letterClass} strArray={surname} idx={15} /> <AnimatedLetters letterClass={letterClass} strArray={lineTwo} idx={22} /> <AnimatedLetters letterClass={letterClass} strArray={finnsAge.slice(0,7)} idx={28} /><span id="age">{finnsAge.slice(7, 12)}</span><br /> <AnimatedLetters letterClass={letterClass} strArray={lineThree} idx={38} /> 
                     <AnimatedLetters letterClass={letterClass} strArray={lineFour} idx={60} /> <a href="https://en.wikipedia.org/wiki/Carlow" target="_blank"><AnimatedLetters letterClass={letterClass} strArray={lineFive} idx={64} /></a>
                 </h1>
             </div>
-        
         </>
     )
 }
