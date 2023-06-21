@@ -8,6 +8,7 @@ const Logo = () => {
     const bgRef = useRef();
     const outlineLogoRef = useRef();
     const solidLogoRef = useRef();
+    const pathRef = useRef();
 
     useEffect(() => {
         gsap.registerPlugin(DrawSVGPlugin)
@@ -19,7 +20,10 @@ const Logo = () => {
         })
         .from(outlineLogoRef.current, {
             drawSVG: 0,
-            duration: 20,
+            duration: 10,
+        })
+        .set(outlineLogoRef.current, { // add this line
+            attr: { fill: "#000" }
         })
 
     }, [])
