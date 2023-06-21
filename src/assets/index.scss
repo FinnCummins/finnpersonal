@@ -108,6 +108,7 @@ h2 {
 
         &:hover {
             color: blue;
+            transition: all 1s ease-out;
 
             svg {
                 opacity: 0;
@@ -128,7 +129,6 @@ h2 {
             width: 100%;
             text-align: center;
             opacity: 0;
-            transition: all 0.3s ease-out;
             height: 20px;
         }
     }
