@@ -40,6 +40,12 @@ export const Home = () => {
 
     }, [finnsAge]);
 
+    useEffect(() => {
+        return setTimeout(() => {
+            setLetterClass("text-animate-hover")
+        }, 10000)
+    }, [])
+
     return (
         <>
             <NavBar />
@@ -50,6 +56,8 @@ export const Home = () => {
                     <AnimatedLetters letterClass={letterClass} strArray={lineFour} idx={60} /> <a href="https://en.wikipedia.org/wiki/Carlow" target="_blank"><AnimatedLetters letterClass={letterClass} strArray={lineFive} idx={64} /></a>
                 </h1>
             </div>
+
+            <Logo />
         </>
     )
 }
