@@ -1,3 +1,19 @@
+@font-face {
+    font-family: "Helvetica Neue";
+    src: url("./helvetica-neu.ttf") format("ttf");
+
+}
+
+@font-face {
+    font-family: "La Belle Aurore";
+    src: url("./LaBelleAurore.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Coolvetica";
+    src: local("Coolvetica"), url("CoolveticaRg-Regular.woff2") format("woff2");
+}
+
 body {
     align-items: center;
     text-align: center;
@@ -9,6 +25,43 @@ p {
     margin:auto;
     display: block;
     font-family: "sans-serif";
+}
+
+h2 {
+    margin: 0;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+#homePage-intro {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    animation-delay: 1s;
+    margin:  0;
+    font-family: "Coolvetica";
+    left: 17%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40%;
+    font-size: 25px;
+    font-weight: 100;
+    letter-spacing: 3px;
+    transform-style: preserve-3d;
+    color: darkgray;
+}
+
+#homePage-intro a {
+    color: darkgray;
+    text-decoration: none;
+}
+
+#homePage-intro a:visited {
+    color: darkgray;
+    text-decoration: none;
 }
 
 .navbar {
@@ -72,10 +125,17 @@ p {
 
 #main {
     padding-bottom: 110px;
+    padding-top: 20px;
 }
 
 #mainPage {
     text-align: center;
     align-items: center;
     padding-top: 40px;
+}
+
+#about {
+    text-align: center;
+    font-size: 17px;
+    font-family: "Helvetica Neue";
 }
