@@ -89,7 +89,7 @@ h2 {
         margin-bottom: 10px;
         margin-top: 5px;
         p {
-            margin-bottom: 0.6em;
+            margin-bottom: 0.7em;
         }
     }
 
@@ -97,9 +97,82 @@ h2 {
         margin-bottom: 0;
 
         p {
-            margin-bottom: 0.6em;
+            margin-bottom: 0.7em;
         }
 
+    }
+
+    a {
+
+        position: relative;
+
+        &:hover {
+            color: blue;
+
+            svg {
+                opacity: 0;
+            }
+
+            &:after {
+                opacity: 1;
+            }
+        }
+
+        &:after {
+            content: "";
+            font-size: 15px;
+            letter-spacing: 2px;
+            position: absolute;
+            bottom: 0;
+            display: block;
+            width: 100%;
+            text-align: center;
+            opacity: 0;
+            transition: all 0.3s ease-out;
+            height: 20px;
+        }
+    }
+
+    a.home-link {
+        &:after {
+            content: "HOME";
+            transform: translateX(-2%);
+        }
+    }
+
+    a.about-link {
+        &:after {
+            content: "ABOUT";
+            transform: translateX(-25%);
+        }
+    }
+
+    a.projects-link {
+        &:after {
+            content: "PROJECTS";
+            transform: translateX(-26%);
+        }
+    }
+
+    a.techblog-link {
+        &:after {
+            content: "TECH BLOG";
+            transform: translateX(-5%);
+        }
+    }
+
+    a.linkedin-link {
+        &:after {
+            content: "LINKEDIN";
+            transform: translateX(-50%);
+        }
+    }
+
+    a.github-link {
+        &:after {
+            content: "GITHUB";
+            transform: translateX(-30%);
+        }
     }
 
 }
@@ -109,10 +182,7 @@ h2 {
     50% { transform: translateY(-10px); }
 }
 
-.navbar svg:hover {
-    color: blue;
-    animation: bounce 0.6s;
-}
+
 
 #finn-in-verona {
     height:300px;

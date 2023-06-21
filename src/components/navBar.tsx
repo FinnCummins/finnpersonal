@@ -14,14 +14,14 @@ export const NavBar = () => {
                 />
             </a>
             <div id="nav2">
-                <p><a href="/"><FontAwesomeIcon icon={faHome} color="#4d4d4e"/></a></p>
-                <p><a href="/about"><FontAwesomeIcon icon={faUser} color="#4d4d4e"/></a></p>
-                <p><a href="/projects"><FontAwesomeIcon icon={faCode} color="#4d4d4e"/></a></p>
-                <p><a href="/techblog"><FontAwesomeIcon icon={faSatelliteDish} color="#4d4d4e"/></a></p>
+                <p><a href="/" class="home-link"><FontAwesomeIcon icon={faHome} color="#4d4d4e"/></a></p>
+                <p><a href="/about" class="about-link"><FontAwesomeIcon icon={faUser} color="#4d4d4e"/></a></p>
+                <p><a href="/projects" class="projects-link"><FontAwesomeIcon icon={faCode} color="#4d4d4e"/></a></p>
+                <p><a href="/techblog" class="techblog-link"><FontAwesomeIcon icon={faSatelliteDish} color="#4d4d4e"/></a></p>
             </div>
             <div id="socials">
-                <p><a href="https://linkedin.com/in/finn-cummins" target="_blank" ><FontAwesomeIcon icon={faLinkedin} color="#4d4d4e"/></a></p>
-                <p><a href="https://github.com/finncummins" target="_blank"><FontAwesomeIcon icon={faGithub} color="#4d4d4e"/></a></p>
+                <p><a href="https://linkedin.com/in/finn-cummins" target="_blank" class="linkedin-link"><FontAwesomeIcon icon={faLinkedin} color="#4d4d4e"/></a></p>
+                <p><a href="https://github.com/finncummins" target="_blank" class="github-link"><FontAwesomeIcon icon={faGithub} color="#4d4d4e"/></a></p>
             </div>
         </div>
     );
