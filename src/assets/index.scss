@@ -121,3 +121,9 @@ h2 {
     font-size: 17px;
     font-family: "Helvetica Neue";
 }
+
+#homePage-intro #age {
+    opacity:0;
+    animation: fadeIn 1.5s forwards;
+    animation-delay: 3.7s;
+}
