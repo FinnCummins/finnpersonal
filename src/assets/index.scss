@@ -38,9 +38,9 @@ h2 {
 
 #homePage-intro {
     opacity: 0;
+    margin:  0;
     animation: fadeIn 1s forwards;
     animation-delay: 1s;
-    margin:  0;
     font-family: "Coolvetica";
     left: 17%;
     position: absolute;
@@ -120,33 +120,4 @@ h2 {
     text-align: center;
     font-size: 17px;
     font-family: "Helvetica Neue";
-}
-
-@keyframes bounceIn {
-    0% {
-      opacity: 0;
-      transform: scale(0.3);
-    }
-  
-    50% {
-      opacity: 0.5;
-      transform: scale(1.05);
-    }
-  
-    70% {
-      opacity: 0.7;
-      transform: scale(0.9);
-    }
-  
-    100% {
-      opacity: 1;
-      transform: scale(1);
-    }
-  }
-
-.text-animate {
-    opacity: 0;
-    animation: bounceIn 1s 1s;
-    animation-fill-mode: forwards;
-    min-width: 10px;
 }
