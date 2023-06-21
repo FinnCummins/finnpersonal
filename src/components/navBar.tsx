@@ -2,10 +2,17 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faHome, faUser, faSatelliteDish, faCode} from '@fortawesome/free-solid-svg-icons'
+import "../assets/index.scss"
 
 export const NavBar = () => {
     return (
         <div className="navbar">
+            <a href="/">
+                <img 
+                    className="main-logo" 
+                    src={"favicon.ico"}
+                />
+            </a>
             <div id="nav2">
                 <p><a href="/"><FontAwesomeIcon icon={faHome} color="#4d4d4e"/></a></p>
                 <p><a href="/about"><FontAwesomeIcon icon={faUser} color="#4d4d4e"/></a></p>

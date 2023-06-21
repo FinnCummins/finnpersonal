@@ -8,7 +8,7 @@ export const Home = () => {
     const [letterClass, setLetterClass] = useState("text-animate");
     const firstName = ["F", "i", "n", "n"];
     const surname = ["C", "u", "m", "m", "i", "n", "s"];
-    
+
     useEffect(() => {
 
         const intervalId = setInterval(() => {
@@ -32,11 +32,11 @@ export const Home = () => {
             
             <div id="homePage-intro">
                 <h1>
-                    My name is Finn Cummins and I am a <div id="age">{finnsAge}</div> year old programmer 
+                    My name is <AnimatedLetters letterClass={letterClass} strArray={firstName} idx={10} /> <AnimatedLetters letterClass={letterClass} strArray={surname} idx={16} /> and I am a <div id="age">{finnsAge}</div> year old programmer 
                     from <a href="https://en.wikipedia.org/wiki/Carlow" target="_blank">Carlow, Ireland</a>.
                 </h1>
             </div>
-            
+        
         </>
     )
 }

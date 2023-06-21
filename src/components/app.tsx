@@ -4,6 +4,7 @@ import { Home } from "./homePage";
 import { About } from "./aboutPage";
 import { Projects } from "./projectPage";
 import { TechBlog } from "./techBlog";
+import "../assets/index.scss"
 
 export const App = () => {
     return (
