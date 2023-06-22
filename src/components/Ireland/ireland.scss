@@ -30,3 +30,15 @@
     transform: translateY(35%);
     transform: translateX(25%);
 }
+
+.path {
+    stroke-dasharray: 3000;
+    stroke-dashoffset: 3000;
+    animation: dash 20s linear forwards;
+  }
+  
+  @keyframes dash {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
