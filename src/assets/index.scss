@@ -228,6 +228,10 @@ h2 {
     width: 40%;
     height: 40%;
     font-size: 20px;
+
+    a:visited {
+        color: blue;
+    }
 }
 
 #finn-in-verona {
@@ -236,4 +240,18 @@ h2 {
     margin-right: 20px;
     margin-left: 40px;
     border-radius: 15px;
+}
+
+#project-header {
+    padding-top: 20px;
+    font-size: 40px;
+    font-family: "Coolvetica";
+}
+
+
+
+#techblog-header {
+    padding-top: 20px;
+    font-size: 40px;
+    font-family: "Coolvetica";
 }

@@ -1,14 +1,12 @@
 import React from "react";
 import { NavBar } from "./navBar";
+import { Preview } from "./Blog preview/preview";
 
 export const TechBlog = () => {
     return (
         <>
             <NavBar />
-            <h2>Tech Blog</h2>
-            <p>Here I will write about the technical decisions/challenges/features I have encountered
-                while building my <a href="/projects">projects</a>.
-            </p>
+            <h2 id="techblog-header">Tech Blog</h2>
         </>
     )
 }
