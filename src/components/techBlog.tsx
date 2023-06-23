@@ -7,6 +7,7 @@ export const TechBlog = () => {
         <>
             <NavBar />
             <h2 id="techblog-header">Tech Blog</h2>
+            <Preview />
         </>
     )
 }
