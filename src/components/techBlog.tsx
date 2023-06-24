@@ -6,8 +6,20 @@ export const TechBlog = () => {
     return (
         <>
             <NavBar />
-            <h2 id="techblog-header">Tech Blog</h2>
-            <Preview />
+            <div id="blog-layout">
+                <h2 id="techblog-header">Tech Blog</h2>
+                <div id="blogs-container">
+                    <Preview />
+                    <Preview />
+                    <Preview />
+                    <Preview />
+                    <Preview />
+                    <Preview />
+                    <Preview />
+                    <Preview />
+                    <Preview />
+                </div>
+            </div>
         </>
     )
 }
