@@ -5,7 +5,7 @@ export const Preview = () => {
         <>
             <div class="blog-preview">
                 <img class="blog-preview-image" src="./startingAStartup.jpg"></img>
-                <blogheading>How to start a startup</blogheading>
+                <p id="blog-heading"><b>How to start a startup</b></p>
                 <description>
                     In this blog post you will learn how you too can quit the 9 to 5,
                     start your own company and become your own boss.

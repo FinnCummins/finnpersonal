@@ -18,7 +18,7 @@ export const About = () => {
                     src="finnInVerona.JPG"/>
                     <p>
                         A picture of me on my 2023 trip 
-                        to <a href="https://en.wikipedia.org/wiki/Verona">Verona, Italy</a>
+                        to <a href="https://en.wikipedia.org/wiki/Verona" target="_blank">Verona, Italy</a>
                     </p>
                 </div>
             </div>
