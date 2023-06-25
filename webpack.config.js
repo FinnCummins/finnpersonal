@@ -26,6 +26,23 @@ module.exports = {
             'sass-loader',
           ],
         },
+        {
+          test: /\.md$/,
+          use: [
+            {
+              loader: 'json-loader',
+            },
+            {
+              loader: 'gray-matter-loader',
+              options: {
+                parserOptions: { year: true }
+              }
+            },
+            {
+              loader: 'raw-loader',
+            },
+          ],
+        },  
       ],
     },
     devServer: {

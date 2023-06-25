@@ -41,10 +41,15 @@ export const Home = () => {
     }, [finnsAge]);
 
     useEffect(() => {
-        return setTimeout(() => {
-            setLetterClass("text-animate-hover")
-        }, 10000)
-    }, [])
+        const timer = setTimeout(() => {
+            setLetterClass("text-animate-hover");
+        }, 10000);
+    
+        return () => {
+            clearTimeout(timer);
+        };
+    }, []);
+    
 
     return (
         <>
