@@ -7,7 +7,4 @@ description: "Spending a summer at Dogpatch labs"
 
 ### Dogpatch labs - Dublin, Ireland.
 During my summer break after my second year of computer science and business at Trinity College Dublin
-I have decided to get into free lance consulting and build up a customer base.
-So far I have been working on a personal portfolio website to display my projects, a static 
-website for one of my clients and a developer dashboard for one of my clients who is also based
-here in Dogpatch.
+I have started doing free lance web development. So far I have been working on a personal portfolio website to display my projects, a static website for one of my clients and a developer dashboard for one of my clients who is also based here in Dogpatch.
