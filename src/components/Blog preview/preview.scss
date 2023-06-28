@@ -9,6 +9,11 @@
     text-align: center;
     display: flex;
     flex-direction: column;
+    
+    &:visited {
+        text-decoration: none;
+        color: blue;
+    }
 }
 
 .blog-preview-image {

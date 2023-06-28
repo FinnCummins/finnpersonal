@@ -1,13 +1,12 @@
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
-import { posts } from '../../loadPosts';
-import matter from 'gray-matter';
+import  posts  from './posts.json';
 
 const BlogPost = ({ slug }) => {
-  const postContent = posts[slug];
-  const { content } = matter(postContent);
+  const post = posts.find(post => post.slug === slug);
+  const postContent = post.content;
   
-  return <ReactMarkdown>{content}</ReactMarkdown>;
+  return <ReactMarkdown>{postContent}</ReactMarkdown>;
 }
 
 export default BlogPost;

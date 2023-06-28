@@ -5,7 +5,7 @@ import { About } from "./aboutPage";
 import { Projects } from "./projectPage";
 import { TechBlog } from "./techblog/techBlog";
 import "../assets/index.scss"
-import { slugs } from "../loadPosts.js"
+import  posts  from "./techblog/posts.json";
 import BlogPost from './techblog/blog';
 
 export const App = () => {
@@ -15,8 +15,8 @@ export const App = () => {
             <Route path="/about" element={<About />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/techblog" element={<TechBlog />} />
-            {slugs.map(slug => (
-                <Route key={'dogpatch'} path={`/techblog/dogpatch`} element={<BlogPost slug={"dogpatch"} />} />
+            {posts.map(post => (
+                <Route key={post.slug} path={`/techblog/${post.slug}`} element={<BlogPost slug={post.slug} />} />
             ))}
         </Routes>
     )

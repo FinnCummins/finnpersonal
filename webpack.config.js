@@ -50,7 +50,7 @@ module.exports = {
         directory: path.join(__dirname, "."),
       },
       compress: true,
-      port: 9000, // You can change the port as per your preference
+      port: 9000, 
       historyApiFallback: {
         index: "index.html",
       },

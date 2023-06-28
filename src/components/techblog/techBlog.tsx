@@ -1,11 +1,10 @@
 import React from "react";
 import { NavBar } from "../navBar";
 import  Preview  from "../Blog preview/preview";
-import { slugs } from "../../loadPosts.js"
+import posts from "./posts.json"
 import { Outlet } from 'react-router-dom';
 
 export const TechBlog = () => {
-    console.log('Slugs:', slugs); 
     return (
         <>
             <NavBar />
@@ -13,8 +12,8 @@ export const TechBlog = () => {
                 <h2 id="techblog-header">Tech Blog</h2>
                 <div id="blogs-container">
                     {
-                        slugs.map((slug) => (
-                            <Preview key={"dogpatch"} slug={"dogpatch"} />
+                        posts.map((post) => (
+                            <Preview key={`${post.slug}`} slug={`${post.slug}`} />
                         ))
                     }
                 </div>

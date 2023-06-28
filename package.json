@@ -47,7 +47,8 @@
   },
   "scripts": {
     "test": "jest",
-    "dev:bundler": "webpack -w --mode=development",
+    "generate": "node ./src/loadPosts.js",
+    "dev:bundler": "npm run generate && webpack -w --mode=development",
     "start": "webpack serve --open"
   }
 }

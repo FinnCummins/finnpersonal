@@ -1,29 +1,26 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import matter from 'gray-matter';
 import './preview.scss';
-import {posts} from "../../loadPosts.js"
+import posts from "../techblog/posts.json"
 
-interface PreviewProps {
-  slug: string;
-}
-
-const Preview: React.FC<PreviewProps> = ({ slug }) => {
+const Preview = ({ slug }) => {
   
-  const postContent = posts[slug];
-  
-  const { data, content } = matter(postContent);
+  const post = posts.find(post => post.slug === slug);
 
-  // Extract the blog title, description, and image from the frontmatter
-  const { title, description, image } = data;
+  if (!post) {
+    // render nothing if the post was not found
+    return null;
+  }
+
+  const { title, date, description, image } = post;
 
   return (
-    <Link to={`/techblog/${slug}`}>
-      <div className="blog-preview">
-        <img className="blog-preview-image" src={image} alt={title} />
-        <p id="blog-heading"><b>{title}</b></p>
-        <p>{description}</p>
-      </div>
+    <Link to={`/techblog/${slug}`} className="blog-preview">
+      
+      <img className="blog-preview-image" src={image} alt={title} />
+      <p id="blog-heading"><b>{title}</b></p>
+      <p>{description}</p>
+      
     </Link>
   );
 }

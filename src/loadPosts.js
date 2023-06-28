@@ -1,11 +1,19 @@
-const context = require.context('./components/techblog/blogs', true, /\.md$/);
 
-const slugs = context.keys().map(key => key.slice(2, -3));
 
-const posts = context.keys().map(key => {
-  const slug = key.slice(2, -3);
-  const post = context(key);
-  return { [slug]: post.default };
-}).reduce((acc, cur) => Object.assign(acc, cur), {});
+const fs = require("fs");
+const matter = require("gray-matter");
 
-export { slugs, posts };
+const files = fs.readdirSync("./src/components/techblog/blogs");
+
+const posts = files.map((fileName) => {
+    const slug = fileName.replace(".md", "");
+    const readFile = fs.readFileSync(`./src/components/techblog/blogs/${fileName}`, "utf-8");
+    const { data: frontmatter, content } = matter(readFile);
+    return {
+      slug,
+      ...frontmatter,
+      content
+    };
+});
+
+fs.writeFileSync('./src/components/techblog/posts.json', JSON.stringify(posts, null, 2));
