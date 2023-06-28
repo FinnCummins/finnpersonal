@@ -13,7 +13,7 @@ export const TechBlog = () => {
                 <div id="blogs-container">
                     {
                         posts.map((post) => (
-                            <Preview key={`${post.slug}`} slug={`${post.slug}`} />
+                            <Preview key={`${post.slug}`} slug={`${post.slug}`} isProjectBlog={false}/>
                         ))
                     }
                 </div>

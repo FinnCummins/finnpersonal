@@ -10,10 +10,11 @@
     display: flex;
     flex-direction: column;
     
-    &:visited {
-        text-decoration: none;
-        color: blue;
-    }
+}
+
+.blog-preview:visited {
+    text-decoration: none !important;
+    color: black;
 }
 
 .blog-preview-image {

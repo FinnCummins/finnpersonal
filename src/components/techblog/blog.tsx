@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
-import  posts  from './posts.json';
+import posts from './posts.json';
 
 const BlogPost = ({ slug }) => {
   const post = posts.find(post => post.slug === slug);
